@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antara Bhattacharya - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #163791 0%, #1135ad 100%);
+            color: white;
+            padding: 30px 25px;
+            flex-shrink: 0;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 200px;
+            background: linear-gradient(135deg, #ffd6e7 0%, #c7b3f5 100%);
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .sidebar p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .skills-list {
+            list-style: none;
+        }
+        
+        .skills-list li {
+            font-size: 13px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .skills-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 40px 45px;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            margin-bottom: 35px;
+        }
+        
+        .name {
+            font-size: 42px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        
+        .content-section {
+            margin-bottom: 30px;
+        }
+        
+        .content-section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .date-range {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+        
+        .position-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 3px;
+        }
+        
+        .institution {
+            font-size: 13px;
+            color: #475569;
+            margin-bottom: 10px;
+        }
+        
+        .description-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .description-list li {
+            font-size: 12px;
+            color: #334155;
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .description-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1e40af;
+        }
+        
+        .research-text, .activity-text {
+            font-size: 12px;
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-img">
+                <img height="200px" src="./Untitled design.png" alt="">
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Bangalore 560066</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>7054308828</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>antara8127@gmail.com</span>
+                </div>
+            </div>
+            
+            <div class="section-title">OBJECTIVES</div>
+            <p>A motivated and compassionate B.Sc. Nursing graduate (2026) seeking a Lecturer position in a Nursing College in Karnataka. Eager to contribute in nursing education through effective teaching, clinical guidance, and continuous learning while shaping competent future nurses.</p>
+            
+            <div class="section-title">SKILLS</div>
+            <ul class="skills-list">
+                <li>Basic teaching and demonstration skills</li>
+                <li>Teamwork and collaboration</li>
+                <li>Fast learner</li>
+                <li>Quick learner</li>
+                <li>Good Communication and Interpersonal Skills</li>
+                <li>Student Support and Guidance</li>
+                <li>Patient Education</li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+                <h1 class="name">Antara<br>Bhattacharya</h1>
+            </div>
+            
+            <div class="content-section">
+                <h2 class="content-section-title">EXPERIENCE</h2>
+                
+                <div class="experience-item">
+                    <div class="date-range">January 2025 - October 2025</div>
+                    <div class="position-title">Research Student Vydehi Institute of Nursing Sciences & Research Centre | Bangalore, India</div>
+                    <ul class="description-list">
+                        <li>Conducted a study to assess the communication gap between parents and students, among nursing students.</li>
+                        <li>Collected data using a structured questionnaire covering demographic information and aspects of parent-student communication.</li>
+                        <li>Analyzed findings to understand the relationship between communication patterns and students' emotional well-being.</li>
+                        <li>Assisted faculty during clinical demonstrations and ward teaching.</li>
+                        <li>Conducted patient health education sessions under supervision.</li>
+                        <li>Prepared nursing care plans, case studies, and case presentations.</li>
+                        <li>Participated in seminars, assignments, and academic discussions.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="position-title">CLINICAL EXPERIENCE:</div>
+                    <ul class="description-list">
+                        <li>Completed comprehensive clinical training as part of a B.Sc. Nursing curriculum at VINS & RC. Including postings in:</li>
+                        <li>Medical-Surgical Nursing</li>
+                        <li>Obstetrics & Gynecological Nursing</li>
+                        <li>Pediatric Nursing</li>
+                        <li>Psychiatric Nursing</li>
+                        <li>Community Health Nursing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h2 class="content-section-title">EDUCATION AND TRAINING</h2>
+                
+                <div class="education-item">
+                    <div class="date-range">Expected in March 2026</div>
+                    <div class="position-title">Bachelor of Science | Nursing</div>
+                    <div class="institution">Vydehi Institute of Nursing Sciences & Research Centre, Bangalore</div>
+                    <div class="institution">Vydehi Institute of Nursing Sciences And Research Centre</div>
+                    <ul class="description-list">
+                        <li>1st yr – 70%</li>
+                        <li>2nd yr – 71%</li>
+                        <li>3rd yr – 73%</li>
+                    </ul>
+                    <ul class="description-list" style="margin-top: 10px;">
+                        <li>Assisted faculty during clinical demonstration and ward teaching</li>
+                        <li>Conducted patient health education session under supervision</li>
+                        <li>Prepared nursing care plan, case studies and case presentation</li>
+                        <li>Participated in seminar assignments and academic discussions</li>
+                        <li>Worked in special units -ICU ,CCU, MICU, NICU, PICU Assisted normal deliveries Worked in medical, surgical and pediatric ward</li>
+                        <li>Gyno ward/Obstetric ward- Antenatal,postnatal and labour room.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h2 class="content-section-title">RESEARCH</h2>
+                <p class="research-text">A study to assess the communication gap between parents and students among nursing students at a selected institution in Bangalore</p>
+                <p class="research-text">This study aimed to assess the communication gap between parents and nursing students at a selected institution in Bangalore. Effective communication between parents and students plays a vital role in shaping students' emotional well-being and academic performance.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2 class="content-section-title">ACTIVITIES</h2>
+                <p class="activity-text">Workshop on nurses responsibility in IV infusion, Vydehi Institution , 2022</p>
+                <p class="activity-text">IAP National BLS and CPR , Vydehi Institution ,2024</p>
+                <p class="activity-text">Basic Cardiac Life Support and Essential Skills, VASA, Completed 2025</p>
+                <p class="activity-text">Human Values in 21st Century-Compassion in Action, Vydehi Institute, Completed 2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
