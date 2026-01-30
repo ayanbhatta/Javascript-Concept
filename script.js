@@ -1,6 +1,6 @@
 // let ele = document.getElementById("heading1")
 // console.log(ele);
-// // console.dir(ele);
+// console.dir(ele);
 // ele.style.background = "yellow";
 
 let elements = document.getElementsByClassName("heading2")
@@ -36,9 +36,9 @@ for(item of elements){
 // console.log(heading.textContent);
 
 //? DOM Attributes
-// let ele = document.querySelector('h1')
-// console.log(ele.getAttribute("name"));
-// ele.setAttribute("name","js")
+let ele = document.querySelector('h1')
+console.log(ele.getAttribute("name"));
+ele.setAttribute("name","js")
 // ele.removeAttribute("name")
 
 // let button = document.createElement("button")
@@ -54,12 +54,21 @@ for(item of elements){
 // myul.before(button)
 // myul.removeChild(button)
 
-for (let i = 1; i <= 3; i++) {
-    const newDiv = document.createElement('div');
-    newDiv.className = 'js';
-    document.body.appendChild(newDiv);
-}
-const divs = document.querySelectorAll('.myclass');
-divs.forEach((div, index) => {
-    div.textContent = `I am unique div number ${index + 1}`;
-});
+
+
+//before
+
+//--------------------------
+    //prepend               |
+    //append                |
+//--------------------------
+//after
+// for (let i = 1; i <= 3; i++) {
+//     const newDiv = document.createElement('div');
+//     newDiv.className = 'js';
+//     document.body.appendChild(newDiv);
+// }
+// const divs = document.querySelectorAll('.myclass');
+// divs.forEach((div, index) => {
+//     div.textContent = `I am unique div number ${index + 1}`;
+// });
