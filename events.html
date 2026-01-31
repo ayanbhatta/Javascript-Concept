@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="submit" onclick="fun()">Button</button>
+    <button type="submit" onmouseleave="fun()">Button</button>
+    <button type="submit" onmousedown="fun()">Button</button>
+    <button type="submit" onmouseout="fun()">Button</button>
+    <h1>Rvents</h1>
+    <!-- //types of events -->
+     <!-- mouse, keybord form -->
+
+     <!-- !ways to trigger events -->
+      <!-- 1. by using inner events or html attributes
+            <button onclick="concole.log('abcd')">click me</button> 
+            <button onclick="fun()">clickme</button>-->
+    <script>
+        function fun(){
+            console.log("fun is executing");
+        }
+// ! 2nd way (but only executes the latest one)
+        let btn = document.querySelector(".btn");
+        btn.onClick = ()=>{
+            console.log("btn clicked");
+        }
+        btn.onClick = ()=>{
+            console.log("btn clicked twice");
+        }
+        
+    </script>
+    
+    
+            <!-- <script src="events.js"></script> -->
+</body>
+</html>
