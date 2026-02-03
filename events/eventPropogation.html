@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+        <section class="sec">
+            <button class="btn">Click Me</button>
+        </section>
+    </div>
+
+    <ul class="fruits">
+        <li class="fru">apple</li>
+        <li class="fru">grapes</li>
+        <li class="fru">orange</li>
+        <li class="fru">strawberry</li>
+        <li class="fru"><a href="https://www.google.com">google</a></li>
+    </ul>
+
+    <script>
+        let btn=document.querySelector(".btn")
+        let div=document.querySelector(".div")
+        let sec=document.querySelector(".sec")
+
+        btn.addEventListener(
+            "click",()=>{
+                console.log("button clicked");
+            },true
+        );
+
+        div.addEventListener("click",()=>{
+            console.log("div clicked");
+        },true)
+        sec.addEventListener("click",()=>{
+            console.log("section clicked");
+        },true)
+
+        btn.addEventListener("click",(e)=>{
+            console.log("button clicked");
+            e.stopPropagation()
+        })
+        div.addEventListener("click",(e)=>{
+            console.log("div clicked");
+            e.stopPropagation()
+        })
+        sec.addEventListener("click",(e)=>{
+            console.log("section clicked");
+            e.stopPropagation()
+        })
+
+        let fruits = document.querySelectorAll(".fru");
+        console.log(fruits);
+        fruits.forEach((el) =>{
+            el.addEventListener("click", (e)=>{
+                console.log(e);
+                let item = e.target.innerText;
+                console.log(item);
+
+            })
+        })
+
+        let fruits2 = document.querySelector(".fruits")
+        fruits2.addEventListener("click",(e)=>{
+            e.preventDefault()
+            if(e.target.tagName === "LI"){
+                let item = e.target.innerText;
+                alert(`you clicked on ${item}`);
+            }
+        })
+        fruits2.addEventListener("contextmenu", (e)=>{
+            e.preventDefault();
+            if(e.target.tagName ==="LI"){
+                let item = e.target.innerText;
+                alert(`you clicked on ${item}`);
+            }
+        })
+    </script>
+</body>
+</html>

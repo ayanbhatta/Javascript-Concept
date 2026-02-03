@@ -18,6 +18,13 @@
       <!-- 1. by using inner events or html attributes
             <button onclick="concole.log('abcd')">click me</button> 
             <button onclick="fun()">clickme</button>-->
+    
+    <!--  !3. using addEventListner() -->
+    <h1 class="h1">My Name is: </h1>
+    <form action="" class="form">
+        <input type="text" name="" class="inp"/>
+        <button>Click Me</button>
+    </form>
     <script>
         function fun(){
             console.log("fun is executing");
@@ -30,7 +37,21 @@
         btn.onClick = ()=>{
             console.log("btn clicked twice");
         }
+        let form = document.querySelector(".form")
+        let inp1 = document.querySelector(".inp")
+        let h1 = document.querySelector(".ht")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            console.log("form submitted");
+            inp1.value = "";
+        })
+        inp.addEventListener("change",(e)=>{
+            console.log(e);
+            console.log(input.value);
+            inp1.value = "";
+        })
         
+
     </script>
     
     
