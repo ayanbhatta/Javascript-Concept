@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+}
+
+.converter-container {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="converter-container">
+        <h1>Temp Converter</h1>
+        
+        <div class="input-group">
+            <label>Celsius (°C)</label>
+            <input type="number" id="celsius" >
+        </div>
+
+        <div class="input-group">
+            <label>Fahrenheit (°F)</label>
+            <input type="number" id="fahrenheit" >
+        </div>
+    </div>
+
+    <script>
+const celsiusInput = document.querySelector("#celsius");
+const fahrenheitInput = document.querySelector("#fahrenheit");
+celsiusInput.addEventListener("input", () => {
+    let cTemp = parseFloat(celsiusInput.value);
+    if (!isNaN(cTemp)) {
+        let fTemp = (cTemp * 9/5) + 32;
+        fahrenheitInput.value = parseFloat(fTemp.toFixed(2));
+    } else {
+        fahrenheitInput.value = "";
+    }
+});
+fahrenheitInput.addEventListener("input", () => {
+    let fTemp = parseFloat(fahrenheitInput.value);
+    if (!isNaN(fTemp)) {
+        let cTemp = (fTemp - 32) * 5/9;
+        celsiusInput.value = parseFloat(cTemp.toFixed(2));
+    } else {
+        celsiusInput.value = "";
+    }
+});
+    </script>
+</body>
+</html>
