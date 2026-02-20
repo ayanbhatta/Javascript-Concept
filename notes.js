@@ -650,7 +650,7 @@
 //   age: 22,
 // };
 // let trainer = { ...student }; // shallow copy
-// http://trainer.name = "sreenivas";
+// trainer.name = "sreenivas";
 // console.log(student)
 
 //? Ways to Create a Shallow Copy
@@ -723,8 +723,8 @@
 // };
 
 // const user2 = structuredClone(user1); // deep copy
-// http://user2.address.city = "Los Angeles";
-// console.log(http://user1.address.city); // "New York" ✅
+// user2.address.city = "Los Angeles";
+// console.log(user1.address.city); // "New York" ✅
 
 //? JSON:
 // JSON stands for: JavaScript Object Notation
